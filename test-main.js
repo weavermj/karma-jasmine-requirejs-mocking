@@ -1,0 +1,26 @@
+var requirePaths = {
+    'mocker': 'lib/mocker',
+    'underscore': 'lib/underscore'
+};
+
+require(['underscore'], function (underscore) {
+    // window._ = underscore;
+
+});
+
+var tests = [];
+for (var file in window.__karma__.files) {
+    if (window.__karma__.files.hasOwnProperty(file)) {
+        if (/spec\.js$/.test(file)) {
+            tests.push(file);
+        }
+    }
+}
+
+require.config({
+    baseUrl : '/base/',
+    paths : requirePaths,
+    deps: tests,
+    callback: window.__karma__.start
+});
+

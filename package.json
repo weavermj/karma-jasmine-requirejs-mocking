@@ -1,0 +1,17 @@
+{
+  "name": "karma-jasmine-requirejs-mocking",
+  "version": "0.0.0",
+  "description": "Example use of karma with jasmine and requirejs to mock dependencies",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "karma": "^0.12.22",
+    "karma-jasmine": "^0.2.2",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-requirejs": "^0.2.2",
+    "requirejs": "^2.1.14"
+  }
+}
